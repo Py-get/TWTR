@@ -12,10 +12,20 @@ Take the consumer key (and secret) and access token (and secret) from your Twite
 
 In local_settings.py, be sure to add the handle of the Twitter user you want your _ebooks account to be based on. To make your tweets go live, change the DEBUG variable to False.
 
-Edit lines 141 and 142 of ebooks.py to a directory where you save images you want the bot to post. By default it has a 1/10 chance to post images. This can be changed by editting ODDS2 in local_settings.py
+Edit lines 141 and 142 of ebooks.py to a directory where you save images you want the bot to post. By default it has a 1/7 chance to post images. This can be changed by editting ODDS2 in local_settings.py
 
 Consider changing line 92 of ebooks.py to end in a 1 not a 2. This was changed from heroku_ebooks to allow for smaller accounts but I can't speak for how reliable it is.
 
 Install [python-twitter](https://github.com/bear/python-twitter)
 
 Run automate.py. Every 15 minutes there is a 1/3 chance (give or take) the bot will post, and a 1/10 chance it will post with an image.
+
+# What makes this different?
+
+ALL OUTPUTS ARE TYPED IN CAPS
+
+If the bot finds a repeating characters it may duplicate or remove them for true quality, with a chance to drop a letter from the end. ("Hello world" becomes "Helo worl")
+
+Script to automate the bot if you preffer not to cloud host
+
+Bot has a small chance to upload images
