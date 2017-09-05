@@ -14,7 +14,7 @@ In local_settings.py, be sure to add the handle of the Twitter user you want you
 
 Edit lines 141 and 142 of ebooks.py to a directory where you save images you want the bot to post. By default it has a 1/10 chance to post images. This can be changed by editting ODDS2 in local_settings.py
 
-Consider changing line 92 of ebooks.py to end in a 1 not a 2. This was changed from heroku_ebooks to allow for smaller accounts but I can't speak for how reliable it is anymore.
+Consider changing line 92 of ebooks.py to end in a 1 not a 2. This was changed from heroku_ebooks to allow for smaller accounts but I can't speak for how reliable it is.
 
 Install [python-twitter](https://github.com/bear/python-twitter)
 
