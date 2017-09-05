@@ -12,9 +12,9 @@ Take the consumer key (and secret) and access token (and secret) from your Twite
 
 In local_settings.py, be sure to add the handle of the Twitter user you want your _ebooks account to be based on. To make your tweets go live, change the DEBUG variable to False.
 
-Edit lines 141 and 142 to a directory where you save images you want the bot to post. By default it has a 1/10 chance to post images. This can be changed by editting ODDS2 in local_settings.py
+Edit lines 141 and 142 of ebooks.py to a directory where you save images you want the bot to post. By default it has a 1/10 chance to post images. This can be changed by editting ODDS2 in local_settings.py
 
-Consider changing line 92 to end in a 1 not a 2. This was changed from heroku_ebooks to allow for smaller accounts but I can't speak for how reliable it is anymore.
+Consider changing line 92 of ebooks.py to end in a 1 not a 2. This was changed from heroku_ebooks to allow for smaller accounts but I can't speak for how reliable it is anymore.
 
 Install [python-twitter](https://github.com/bear/python-twitter)
 
